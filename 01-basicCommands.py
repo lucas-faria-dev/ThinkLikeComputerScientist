@@ -1,5 +1,5 @@
 print("Hello world.")
-# Getting to know types...
+# Getting to know types
 print(type(2))
 print(type("2"))
 print(type(42.0))
