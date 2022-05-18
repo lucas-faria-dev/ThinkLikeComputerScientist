@@ -41,6 +41,13 @@ def test_kilometerToMile(self):
     result = basic.kilometerToMile(1.61)
     self.assertEqual(result, 1, "Should be 1")
 
+def test_addSecondsToTime_Second(self):
+    """
+    Test addSecondsToTime function - 60 seconds
+    """
+    result = basic.addSecondsToTime(6, 59, 0, 60)
+    print(result)
+    self.assertEqual(result, "7:00:00", "Should be 7:00:00")
 
 if __name__ == '__main__':
     test.main()

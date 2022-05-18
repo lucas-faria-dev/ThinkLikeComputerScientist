@@ -1,0 +1,3 @@
+python ThinkLikeComputerScientist\02\variablesExpressionsAndStatements.py
+
+python ThinkLikeComputerScientist\01\basicCommands_test.py

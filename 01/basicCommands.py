@@ -3,11 +3,9 @@ def totalSeconds(hours, minutes, seconds):
     minutes_in_seconds = minutes * 60
     return hours_in_seconds + minutes_in_seconds + seconds
 
-
 def kilometerToMile(kilometers):
     one_mile_in_kilometers = 1.61
     return kilometers / one_mile_in_kilometers
-
 
 def secondsToMinutesAndSeconds(totalSeconds):
     minutes = totalSeconds // 60
@@ -16,6 +14,14 @@ def secondsToMinutesAndSeconds(totalSeconds):
         "{:,}".format(seconds) + " second(s)"
     return result
 
+def addSecondsToTime(hours, minutes, seconds, additional_seconds):
+    total_seconds = seconds + additional_seconds
+    seconds = total_seconds % 60
+    total_minutes = minutes + total_seconds // 60
+    minutes = total_minutes % 60
+    hours = hours + (total_minutes // 60)
+    newTime = "{00:,}".format(hours) + ":" + "{00:,}".format(minutes) + ":" + "{00:,}".format(seconds)
+    return newTime
 
 def main():
     print("Hello world.")
